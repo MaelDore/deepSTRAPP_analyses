@@ -50,3 +50,21 @@ rsconnect/
 
 # Renv folder
 renv/
+
+# Heavy folders
+outputs/BAMM/*
+outputs/Biogeo/*
+outputs/Morpho/*
+
+
+
+input_data/Cerezer_2023_Neotropical_freshwater_fishes/Abiotic_factors/*
+input_data/Cerezer_2023_Neotropical_freshwater_fishes/All_data_combined/*
+input_data/Cerezer_2023_Neotropical_freshwater_fishes/Biotic_factors/*
+input_data/Cerezer_2023_Neotropical_freshwater_fishes/Datasets/*
+input_data/Cerezer_2023_Neotropical_freshwater_fishes/Sensitivity_test/*
+input_data/Cerezer_2023_Neotropical_freshwater_fishes/Speciation_rates/*
+input_data/Cerezer_2023_Neotropical_freshwater_fishes/Statistics/*
+
+input_data/Leroy_2019/*
+# input_data/Morrone_2022/*
