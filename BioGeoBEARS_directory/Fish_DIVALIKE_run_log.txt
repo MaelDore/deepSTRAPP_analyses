@@ -1,0 +1,343 @@
+2025-09-21 08:45:33.151425 - Start DIVALIKE model run
+[1] "Note: tipranges_to_tip_condlikes_of_data_on_each_state() is converting a states_list with (0-based) numbers to the equivalent areanames"
+
+Your computer has 12 cores.
+[1] "parscale:"
+[1] 1 1
+
+
+NOTE: Before running optimx(), here is a test calculation of the data likelihood
+using calc_loglike_for_optim() on initial parameter values, with printlevel=2...
+if this crashes, the error messages are more helpful
+than those from inside optimx().
+
+     d    e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.01 0.01 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -9952.858
+
+calc_loglike_for_optim() on initial parameters loglike=-9952.858
+
+
+
+Calculation of likelihood on initial parameters: successful.
+
+Now starting Maximum Likelihood (ML) parameter optimization with optimx()...
+
+
+
+Printing any warnings() that occurred during calc_loglike_for_optim():
+
+Warning message:
+package ‘ape’ was built under R version 4.4.3
+
+
+Results of optimx_scalecheck() below. Note: sometimes rescaling parameters may be helpful for ML searches, when the parameters have much different absolute sizes. This can be attempted by setting BioGeoBEARS_run_object$rescale_params = TRUE.
+
+$lpratio
+[1] 0
+
+$lbratio
+[1] 0
+
+Maximizing -- use negfn and neggr
+     d    e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.01 0.01 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -9952.858
+     d    e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.01 0.01 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -9952.858
+     d    e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.01 0.01 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -9952.858
+      d    e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.012 0.01 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -9470.071
+     d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.01 0.012 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -10032.55
+      d    e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.008 0.01 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -10560.91
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.014 0.009 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -9066.445
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.017 0.007 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -8451.414
+      d e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.021 0 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -7774.117
+      d e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.023 0 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -7609.229
+      d e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.027 0 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -7289.415
+      d e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp      LnL
+1 0.029 0 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -7158.06
+      d e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.033 0 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -6935.656
+      d e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.041 0 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -6619.364
+     d e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.05 0 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -6410.371
+      d e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.053 0 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -6357.985
+      d e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.059 0 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -6284.558
+      d e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.062 0 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -6268.945
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.062 0.002 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -6208.909
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.061 0.004 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -6215.089
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.062 0.002 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -6196.928
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.063 0.003 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -6185.833
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.065 0.003 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -6166.728
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp      LnL
+1 0.067 0.003 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -6150.14
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.071 0.003 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -6122.609
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.075 0.003 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -6105.691
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.083 0.003 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -6093.198
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.083 0.003 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -6089.526
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.083 0.004 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -6072.241
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.085 0.004 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -6063.529
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.089 0.004 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -6062.456
+     d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.09 0.006 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -6039.809
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.093 0.006 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -6040.314
+     d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.09 0.007 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -6036.198
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.089 0.006 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -6037.728
+     d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.09 0.006 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -6036.439
+     d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.09 0.007 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -6035.335
+     d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.09 0.007 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -6033.771
+     d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.09 0.007 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -6031.302
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.091 0.007 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -6028.199
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp      LnL
+1 0.092 0.008 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -6025.56
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.094 0.008 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -6021.445
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.097 0.009 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -6014.271
+      d    e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.103 0.01 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -6005.426
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.107 0.012 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5998.418
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.117 0.015 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5989.608
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.124 0.017 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5986.625
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.128 0.017 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5986.329
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.128 0.018 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5985.377
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.131 0.019 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5983.149
+      d    e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.133 0.02 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5982.238
+      d    e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.137 0.02 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5983.502
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.133 0.018 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5995.247
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.133 0.019 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5985.274
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.133 0.019 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5983.497
+      d    e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.133 0.02 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5981.449
+      d    e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.135 0.02 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5981.365
+      d    e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp      LnL
+1 0.134 0.02 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5981.33
+      d    e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp      LnL
+1 0.135 0.02 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5981.22
+      d    e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.135 0.02 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5981.154
+      d    e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.135 0.02 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5981.206
+      d    e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.135 0.02 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5980.684
+      d    e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.135 0.02 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5979.777
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.135 0.021 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5978.914
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.136 0.021 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5978.579
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.136 0.021 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5978.429
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp      LnL
+1 0.137 0.022 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5978.24
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp      LnL
+1 0.139 0.022 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5978.47
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.137 0.021 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5979.357
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.138 0.022 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5977.427
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.137 0.022 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5977.067
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.137 0.022 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5976.917
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.137 0.022 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5976.849
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp      LnL
+1 0.137 0.022 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5976.83
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.137 0.022 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5976.815
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp     LnL
+1 0.137 0.022 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5976.8
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.137 0.022 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5976.793
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.137 0.022 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5976.785
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.137 0.022 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5976.793
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.137 0.022 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5976.934
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.137 0.022 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5976.636
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.137 0.022 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5976.345
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp      LnL
+1 0.137 0.022 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5975.78
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.137 0.022 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5974.728
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.137 0.023 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5972.921
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.136 0.024 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5970.455
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.136 0.026 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5969.411
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp     LnL
+1 0.136 0.026 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5969.4
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.136 0.026 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5969.377
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.136 0.026 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5969.382
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp      LnL
+1 0.136 0.026 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5969.38
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.136 0.026 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5969.372
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.136 0.026 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5969.361
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.136 0.026 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5969.339
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.137 0.026 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5969.296
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.137 0.026 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5969.216
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.138 0.027 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5969.075
+     d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.14 0.027 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5968.867
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.143 0.029 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5968.743
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.143 0.029 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5968.744
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp      LnL
+1 0.143 0.029 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5968.71
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.143 0.029 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5968.691
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.143 0.029 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5968.691
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.143 0.029 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5968.691
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.143 0.029 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5968.691
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.158 0.029 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5976.117
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.129 0.029 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5980.343
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.151 0.029 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5970.345
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.136 0.029 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5971.779
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.147 0.029 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5968.967
+     d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.14 0.029 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5969.599
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.145 0.029 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5968.687
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.142 0.029 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5968.992
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.143 0.031 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5971.847
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.143 0.026 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5971.078
+      d    e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.143 0.03 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5969.623
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.143 0.027 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5969.143
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp      LnL
+1 0.143 0.029 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5968.99
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.143 0.028 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5968.738
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.143 0.029 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5968.799
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.143 0.028 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5968.671
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.158 0.031 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5970.699
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.129 0.026 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5972.957
+      d    e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.151 0.03 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5969.064
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.136 0.027 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5969.868
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.147 0.029 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5968.704
+     d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.14 0.028 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5969.065
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.145 0.029 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5968.652
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.142 0.028 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5968.827
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.143 0.029 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5968.691
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp      LnL
+1 0.143 0.029 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5968.69
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.143 0.029 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5968.693
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.143 0.029 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5968.692
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.143 0.029 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5968.691
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.143 0.029 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5968.691
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.143 0.029 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5968.692
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.143 0.029 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5968.692
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.143 0.029 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5968.691
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.143 0.029 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5968.691
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.143 0.029 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5968.692
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.143 0.029 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5968.692
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.143 0.029 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5968.691
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.143 0.029 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5968.691
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.143 0.029 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5968.692
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.143 0.029 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5968.692
+      d     e a b x n w u j ysv ys y s v mx01 mx01j mx01y mx01s mx01v mx01r  mf dp fdp       LnL
+1 0.143 0.029 0 1 0 0 1 0 0   2  1 1 0 1    0     0     0     0   0.5   0.5 0.1  1   0 -5968.691
+
+
+This is the output from optim, optimx, or GenSA. Check the help on those functions to
+interpret this output and check for convergence issues:
+
+              p1        p2     value fevals gevals niter convcode  kkt1 kkt2 xtime
+bobyqa 0.1434365 0.0286329 -5968.691    100     NA    NA        0 FALSE TRUE 63.62
+2025-09-21 08:47:09.496315 - End of DIVALIKE model run
+Total run time of:
+Time difference of 1.601316 mins
