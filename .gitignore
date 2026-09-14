@@ -56,8 +56,6 @@ outputs/BAMM/*
 outputs/Biogeo/*
 outputs/Morpho/*
 
-
-
 input_data/Cerezer_2023_Neotropical_freshwater_fishes/Abiotic_factors/*
 input_data/Cerezer_2023_Neotropical_freshwater_fishes/All_data_combined/*
 input_data/Cerezer_2023_Neotropical_freshwater_fishes/Biotic_factors/*
@@ -68,3 +66,18 @@ input_data/Cerezer_2023_Neotropical_freshwater_fishes/Statistics/*
 
 input_data/Leroy_2019/*
 # input_data/Morrone_2022/*
+
+# Heavy output files
+outputs/Birds/Bird_BAMM_object.rds
+outputs/Birds/Bird_BAMM_object_full.rds
+outputs/Birds/Birds_deepSTRAPP_HSV_dist.rds
+outputs/Birds/Birds_deepSTRAPP_Reflectance_dist.rds
+outputs/Birds/Birds_deepSTRAPP_Stimulation_diff.rds
+outputs/Birds/Birds_deepSTRAPP_Stimulation_diff_2.5.rds
+outputs/Birds/Birds_deepSTRAPP_Stimulation_diff_one_tailed.rds
+
+outputs/Lichens/Lichens_deepSTRAPP_Primary_Photobiont.rds
+outputs/Lichens/Lichens_deepSTRAPP_Growth_form.rds
+outputs/Lichens/Lichens_deepSTRAPP_Growth_form_one_tailed_0_240.rds
+outputs/Lichens/Lichens_deepSTRAPP_Growth_form_one_tailed.rds
+outputs/Lichens/Lichens_deepSTRAPP_Growth_form_0_200.rds
