@@ -51,23 +51,49 @@ rsconnect/
 # Renv folder
 renv/
 
+# Figures files
+*.ai
+
+
 # Heavy folders
-outputs/BAMM/*
-outputs/Biogeo/*
+# outputs/BAMM/*
+# outputs/Biogeo/*
 outputs/Morpho/*
 
+# Heavy input files
 input_data/Cerezer_2023_Neotropical_freshwater_fishes/Abiotic_factors/*
-input_data/Cerezer_2023_Neotropical_freshwater_fishes/All_data_combined/*
 input_data/Cerezer_2023_Neotropical_freshwater_fishes/Biotic_factors/*
-input_data/Cerezer_2023_Neotropical_freshwater_fishes/Datasets/*
 input_data/Cerezer_2023_Neotropical_freshwater_fishes/Sensitivity_test/*
-input_data/Cerezer_2023_Neotropical_freshwater_fishes/Speciation_rates/*
+input_data/Cerezer_2023_Neotropical_freshwater_fishes/Speciation_rates/DR/*
+input_data/Cerezer_2023_Neotropical_freshwater_fishes/Speciation_rates/Geography_speciation/*
 input_data/Cerezer_2023_Neotropical_freshwater_fishes/Statistics/*
+
+input_data/Nelsen_2020/BAMM/bamm_medusa_med_families_40m_alt_fracs/*
+input_data/Nelsen_2020/BayesTraits/*
+input_data/Nelsen_2020/corHMM/*
+input_data/Nelsen_2020/Data/Alignment_etc_for_ExaML/*
+input_data/Nelsen_2020/treePL/*
 
 input_data/Leroy_2019/*
 # input_data/Morrone_2022/*
 
 # Heavy output files
+outputs/BAMM/BAMMdata_BEL.rds
+outputs/BAMM/BAMMdata_BEL_full.rds
+outputs/BAMM/BAMMdata_MBL.rds
+outputs/BAMM/BAMMdata_MBL_full.rds
+outputs/BAMM/BAMMdata_object_diversification_full.rds
+
+outputs/BAMM_outputs/*
+outputs/BAMM_outputs/Skipper_*
+outputs/BAMM_outputs/Snake_*
+outputs/BAMM_outputs/Lepidosauria_*
+outputs/BAMM_outputs/Bromeliaceae_*
+
+outputs/Biogeo/Fish_deepSTRAPP_biogeo_0_50.rds
+outputs/Biogeo/Fish_deepSTRAPP_biogeo_0_50_backup.rds
+outputs/Biogeo/Fish_deepSTRAPP_biogeo_0_100.rds
+
 outputs/Birds/Bird_BAMM_object.rds
 outputs/Birds/Bird_BAMM_object_full.rds
 outputs/Birds/Birds_deepSTRAPP_HSV_dist.rds
