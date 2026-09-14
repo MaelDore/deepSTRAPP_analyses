@@ -3,9 +3,8 @@
 
 ## :test_tube: Research Article
 
-This repository contains the code and data used to carry out **data
-preparation, biogeographic and diversification analyses, and figure
-generation** for this research article:
+This repository contains the code and data used to carry out **analyses
+for the case studies** presented in this research article:
 
 **Doré & Blaimer, 2026 - deepSTRAPP: an R package to assess trait- and
 range-dependent diversification dynamics over time. TBA**
@@ -16,37 +15,38 @@ range-dependent diversification dynamics over time. TBA**
 
 1.  Understanding how diversification dynamics interact with species
     traits and geographic distributions over time remains a central
-    challenge in macroevolution and biogeography. Existing approaches
-    often focus on present-day patterns, overlooking historical
-    processes acting over deep evolutionary timescales.
+    challenge in macroevolution and biogeography. Yet the timing of
+    these associations is rarely tested explicitly: existing approaches
+    often focus on present-day trait–rate relationship, or summarize it
+    over the whole history of a clade, overlooking variations in
+    historical processes acting over deep evolutionary timescales.
 
-2.  We introduce deepSTRAPP, an R package for assessing trait- and
+2.  We introduce **deepSTRAPP**, an R package for assessing trait- and
     range-dependent diversification across any temporal interval.
-    deepSTRAPP independently models the evolution of traits or ranges
-    and diversification rates on time-calibrated phylogenies, extracts
-    values at user-defined time steps, and performs semi-parametric
-    STRAPP tests to identify time windows when diversification rates
-    diverged across traits or biogeographic regions. The framework
-    handles continuous, categorical, and biogeographic data and includes
+    deepSTRAPP models the evolution of traits or ranges independently of
+    diversification rates on time-calibrated phylogenies, extracts
+    inferred values at user-defined time steps, and performs
+    semi-parametric STRAPP (Structured Rate Permutations on Phylogenies)
+    tests based on block-permutation to identify time windows in which
+    diversification rates varied with species attributes. It handles
+    continuous, categorical and biogeographic data, and includes
     visualization tools to explore the evolution of traits, ranges,
     diversification rates, and the significance of their associations
     through time.
 
-3.  Applied to South American freshwater fishes, deepSTRAPP revealed
-    that while present-day diversification rates were not significantly
-    influenced by body size and bioregion membership, historical
-    patterns revealed distinct temporal intervals of divergence across
-    bioregions. These results demonstrate how long-term signals can be
-    obscured when focusing solely on current rates and highlight the
-    utility of deepSTRAPP in disentangling past and present
-    contributions to biodiversity patterns.
+3.  Applied to empirical datasets, deepSTRAPP provided critical new
+    perspectives to macroevolutionary questions inaccessible to
+    currently available methods. It uncovered significant
+    state-dependent dynamics confined to restricted time windows that
+    whole-tree analyses overlooked, and tempered conclusions about
+    present-day associations that did not extend substantially back
+    through evolutionary time.
 
-4.  deepSTRAPP complements existing State-dependent Speciation
-    Extinction (SSE) models by explicitly incorporating temporal
-    variation in state-dependent diversification. By linking dynamics to
-    the evolution of traits and biogeographic histories through time, it
-    provides a robust framework for understanding the processes shaping
-    biodiversity across broad phylogenetic and temporal scales.
+4.  By explicitly testing for temporal variation in trait- and
+    range-dependent diversification, deepSTRAPP provides a robust
+    framework to disentangle the relative contributions of past versus
+    recent processes in shaping biodiversity patterns biodiversity
+    across broad phylogenetic and temporal scales.
 
 All content is available on
 [GitHub](https://github.com/MaelDore/deepSTRAPP_analyses) and on
@@ -63,18 +63,35 @@ All content is available on
   - [:file_folder:
     **input_data/Cerezer_2023_Neotropical_freshwater_fishes/**](input_data/Cerezer_2023_Neotropical_freshwater_fishes/)
     subdirectory hosts the data from Cerezer et al., 2023 (DOI:
-    10.1038/s41467-023-41812-7) used for analyses. To access the data,
-    see the initial publication and associated Zenodo repository at
-    <https://zenodo.org/records/8301082>.
+    [10.1038/s41467-023-41812-7](https://doi.org/10.1038/s41467-023-41812-7))
+    downloaded from this repository:
+    <https://zenodo.org/records/8301082>. Those were used in **Case
+    study 3 on South American freshwater fishes**.
   - [:file_folder:
     **input_data/Morrone_2022/**](input_data/Morrone_2022/) subdirectory
     contains the map files from Morrone et al. (2022) (DOI:
-    10.1590/0001-3765202220211167) downloaded from
-    <http://neotropicalmap.atlasbiogeografico.com>.
+    [10.1590/0001-3765202220211167](https://doi.org/10.1590/0001-3765202220211167))
+    downloaded from <http://neotropicalmap.atlasbiogeografico.com>.
+    Those were used in **Case study 3 on South American freshwater
+    fishes**.
+  - [:file_folder: **input_data/Nelsen_2020/**](input_data/Nelsen_2020/)
+    subdirectory hosts the data from Nelsen et al. (2020) (DOI:
+    [10.1073/pnas.2001913117](https://doi.org/10.1073/pnas.2001913117))
+    downloaded from
+    <https://github.com/mpnelsen/Lecanoromycetes_megaphylogeny>. Those
+    were used in **Case study 2 on lichen-growing fungi**.
+  - [:file_folder:
+    **input_data/STRAPP_paper/**](input_data/STRAPP_paper/) subdirectory
+    hosts the data from Rabosky & Huang (2016) (DOI:
+    [10.1093/sysbio/syv066](https://doi.org/10.1093/sysbio/syv066))
+    downloaded from this Dryad archive:
+    <https://doi.org/10.5061/dryad.kp93h>. Those were used in **Case
+    study 1 on sexual dichromatism in bird plumage**.
 
 - [:file_folder: **outputs**](outputs/) directory contains all files and
   figures generated by the scripts. They are organized in sub-folders
-  corresponding to each analytic steps performed in the study.
+  corresponding to each case study and analytic step covered in the
+  study.
 
 - [:file_folder: **scripts**](scripts/) directory contains the scripts
   used to run the analyses ordered to follow the analytic pipeline of
@@ -92,8 +109,8 @@ You can download the entire project as a `.zip` from [this
 URL](https://github.com/MaelDore/deepSTRAPP_analyses/zipball/master/).
 After unzipping:
 
-- Open the `Ponerinae_Historical_Biogeography.Rproj` file, found at the
-  root of the project, in RStudio
+- Open the `deepSTRAPP_analyses.Rproj` file, found at the root of the
+  project, in RStudio
 
 - Run sequentially the scripts found in the [:file_folder:
   **scripts**](scripts/) folder. It will rebuild the outputs, maps,
@@ -108,7 +125,7 @@ Please cite this research article as:
 > range-dependent diversification dynamics over time. TBA.
 > <https://doi.org/10.XXXX/TBA>.
 
-## :joystick: Associated files
+## :link: Associated files
 
 The research article associated to this repository is presenting a new
 method for macroevolutionary and historical biogeographic studies
